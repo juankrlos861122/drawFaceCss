@@ -1,0 +1,134 @@
+:root {
+    --skin: #f6c09c;
+    --background: #ed4042;
+    --red: #ed2860;
+    --dark-red: #680524;
+    --black: #00243a;
+    --white: #fff;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+  }
+  
+  .head {
+    width: 150px;
+    height: 250px;
+    position:relative;
+    background-color: var(--skin);
+    border-radius: 100px;
+  }
+  
+  .ears {
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    background-color: var(--skin);
+  }
+  
+  .ear-left {
+    inset-block-start: 90px;
+    inset-inline-start: -34px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .ear-right {
+    inset-block-start: 90px;
+    inset-inline-start: 99%;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .eye-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--black);
+    border-radius: 50%;
+    inset-block-start: 8px;
+  }
+  
+  .eye-left {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 10px 0 30px 30px;
+    inset-block-start: 80px;
+    inset-inline-start: 25px;
+  }
+  
+  .eye-left .eye-circle{
+    inset-inline-start: 20px;
+  }
+  
+  .eye-right {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 0 10px 30px 30px;
+    inset-block-start: 80px;
+    inset-inline-start: 50%;
+  }
+  
+  .eye-right .eye-circle{
+    inset-inline-start: 20px;
+  }
+  
+  .nose {
+    z-index: 5;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--skin);
+    inset-block-start: 116px;
+    inset-inline-start: 50%;
+    transform: translate(-50%,0);
+    border-radius: 50%;
+  }
+  
+  .beard {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--black);
+    border-radius: 40px 40px 60px 60px;
+    inset-block-start: 135px;
+  }
+  
+  .beard .mouth {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: var(--dark-red);
+    inset-block-start: 40px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0 0 80px 70px;
+  }
+  
+  .mouth .teeth {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 0 0 5px 2px;
+  }
+  
+  .mouth .tongue {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    background-color: var(--red);
+    inset-block-end: 0;
+    inset-inline-start: 6px;
+    border-radius: 0 8px 0 40px;
+  }
